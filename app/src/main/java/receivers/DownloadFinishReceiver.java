@@ -14,8 +14,11 @@ public class DownloadFinishReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        Toast.makeText(context, "intent"+intent.getAction(), Toast.LENGTH_LONG).show();
 
-        Toast.makeText(context, intent.getStringExtra("download"), Toast.LENGTH_LONG).show();
+
+
+
 
     }
 }
