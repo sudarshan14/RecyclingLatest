@@ -163,19 +163,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    public void onBackPressed() {
-
-        Fragment fragment = manager.findFragmentById(R.id.FrangmentLoader);
-        if (fragment != null) {
-
-            transaction = manager.beginTransaction();
-            transaction.remove(fragment);
-            transaction.commit();
-
-        } else
-            super.onBackPressed();
-    }
+//    @Override
+//    public void onBackPressed() {
+//
+//        Fragment fragment = manager.findFragmentById(R.id.FrangmentLoader);
+//        if (fragment != null) {
+//
+//            transaction = manager.beginTransaction();
+//            transaction.remove(fragment);
+//            transaction.commit();
+//
+//        } else
+//            super.onBackPressed();
+//    }
 
     @Override
     protected void onStart() {
